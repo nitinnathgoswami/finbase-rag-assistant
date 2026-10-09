@@ -4,8 +4,7 @@ A retrieval-augmented support assistant that answers **only** from the six FinBa
 (savings, fixed deposits & wealth, payments/UPI, credit cards, personal loans, KYC & security),
 shows the sources behind every answer, and says so when the knowledge base does not contain the answer.
 
-* **Live app:** _add your public URL here_
-* **Explanation video (5 min):** _add your video link here_
+
 
 ```
 User question ──► query rewrite (follow-ups) ──► hybrid retrieval ──► rerank ──► guard ──► LLM (JSON) ──► verified answer + sources
