@@ -1,0 +1,13 @@
+pdfplumber>=0.11
+rank-bm25>=0.2.2
+numpy
+fastembed>=0.4.2
+chromadb>=0.5
+streamlit>=1.38
+fastapi>=0.110
+uvicorn>=0.29
+python-dotenv
+google-genai
+openai
+anthropic
+pytest

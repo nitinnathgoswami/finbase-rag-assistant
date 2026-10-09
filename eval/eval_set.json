@@ -1,0 +1,679 @@
+[
+ {
+  "q": "Is there a minimum balance I need to keep in the savings account?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "100% zero-balance structure",
+   "zero-balance account"
+  ],
+  "must_include": [
+   [
+    "no min",
+    "zero",
+    "not required",
+    "no minimum"
+   ]
+  ]
+ },
+ {
+  "q": "How much interest will I earn in a year if I keep 5 lakh in my savings account?",
+  "type": "calc",
+  "answerable": true,
+  "gold": [
+   "Above ₹1,00,000 and up to ₹10,00,000",
+   "the incremental ₹4,00,000 earns 6.00%"
+  ],
+  "must_include": [
+   [
+    "3.5"
+   ],
+   [
+    "6"
+   ]
+  ]
+ },
+ {
+  "q": "How many free withdrawals do I get at non-partner ATMs if I live outside the metros?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "5 in non-metro locations"
+  ],
+  "must_include": [
+   [
+    "5"
+   ]
+  ]
+ },
+ {
+  "q": "What will a physical debit card cost me?",
+  "type": "conflict",
+  "answerable": true,
+  "gold": [
+   "Physical Debit Card Annual Fee",
+   "one-time issuance fee of ₹199"
+  ],
+  "must_include": [
+   [
+    "199"
+   ]
+  ]
+ },
+ {
+  "q": "Will I be charged anything for closing my savings account?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "Account Closure Fee",
+   "does not levy any account closure fee"
+  ],
+  "must_include": [
+   [
+    "no",
+    "free",
+    "zero",
+    "₹0"
+   ]
+  ]
+ },
+ {
+  "q": "What's my daily UPI limit and how many payments can I make in 24 hours?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "Daily cumulative limit of ₹1,00,000",
+   "daily UPI limit is ₹1,00,000"
+  ],
+  "must_include": [
+   [
+    "1,00,000"
+   ],
+   [
+    "20"
+   ]
+  ]
+ },
+ {
+  "q": "When does the bank add interest to my savings account?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "credited quarterly",
+   "March 31, June 30"
+  ],
+  "must_include": [
+   [
+    "quarter"
+   ],
+   [
+    "march",
+    "31"
+   ]
+  ]
+ },
+ {
+  "q": "What rate does a senior citizen get on a 1 year FD?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "1 year to less than 2 years",
+   "effective rate of 8.00% p.a."
+  ],
+  "must_include": [
+   [
+    "8.00",
+    "8%"
+   ]
+  ]
+ },
+ {
+  "q": "If I break my FD within the first week, how much interest do I get?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "zero interest",
+   "within 7 days"
+  ],
+  "must_include": [
+   [
+    "zero",
+    "no interest",
+    "0"
+   ]
+  ]
+ },
+ {
+  "q": "How can I stop TDS being cut from my FD interest?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "Form 15G"
+  ],
+  "must_include": [
+   [
+    "15g",
+    "15h"
+   ]
+  ]
+ },
+ {
+  "q": "Does FinBase let me buy and sell Bitcoin?",
+  "type": "negative",
+  "answerable": true,
+  "gold": [
+   "does NOT provide cryptocurrency",
+   "does NOT offer cryptocurrency"
+  ],
+  "must_include": [
+   [
+    "not",
+    "no",
+    "n't"
+   ]
+  ]
+ },
+ {
+  "q": "Can I take a loan against my farmland?",
+  "type": "negative",
+  "answerable": true,
+  "gold": [
+   "Agricultural Property Loans",
+   "does NOT provide agricultural property"
+  ],
+  "must_include": [
+   [
+    "not",
+    "no",
+    "n't"
+   ]
+  ]
+ },
+ {
+  "q": "Is money in my FinBase fixed deposit insured?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "DICGC insurance scheme up to"
+  ],
+  "must_include": [
+   [
+    "5,00,000",
+    "5 lakh"
+   ]
+  ]
+ },
+ {
+  "q": "What's the smallest SIP I can start?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "₹100 per month"
+  ],
+  "must_include": [
+   [
+    "100"
+   ]
+  ]
+ },
+ {
+  "q": "I want to buy digital gold - what is the minimum purchase?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "starting from as low as ₹10",
+   "as low as ₹10"
+  ],
+  "must_include": [
+   [
+    "10"
+   ]
+  ]
+ },
+ {
+  "q": "Can you give me intraday stock tips for today?",
+  "type": "negative",
+  "answerable": true,
+  "gold": [
+   "Speculative Intraday Tips",
+   "does NOT provide speculative intraday"
+  ],
+  "must_include": [
+   [
+    "not",
+    "no",
+    "n't"
+   ]
+  ]
+ },
+ {
+  "q": "My UPI payment failed but the money left my account. When will I get it back?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "T+2 business days"
+  ],
+  "must_include": [
+   [
+    "t+2",
+    "2 business days",
+    "two business days"
+   ]
+  ]
+ },
+ {
+  "q": "What do I get if the bank is late returning my failed transaction money?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "₹100 per calendar day",
+   "₹100 per day"
+  ],
+  "must_include": [
+   [
+    "100"
+   ]
+  ]
+ },
+ {
+  "q": "How much can I send by UPI in the 24 hours after resetting my PIN?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "₹5,000"
+  ],
+  "must_include": [
+   [
+    "5,000"
+   ]
+  ]
+ },
+ {
+  "q": "How long do I have to report an unauthorised debit in the app?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "within 3 calendar days"
+  ],
+  "must_include": [
+   [
+    "3"
+   ]
+  ]
+ },
+ {
+  "q": "A merchant debit failed on an online purchase. When should the refund arrive and when does compensation start?",
+  "type": "conflict",
+  "answerable": true,
+  "gold": [
+   "P2M Merchant Online Debit Failed"
+  ],
+  "must_include": [
+   [
+    "t+2",
+    "t + 2",
+    "2 business"
+   ],
+   [
+    "t+5",
+    "t + 5",
+    "5"
+   ]
+  ]
+ },
+ {
+  "q": "What does the UPI error U69 mean?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "temporary network timeout",
+   "U69 NPCI Timeout"
+  ],
+  "must_include": [
+   [
+    "timeout"
+   ]
+  ]
+ },
+ {
+  "q": "How much is the Luxe card annual fee and how do I get it waived?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "₹1,20,000"
+  ],
+  "must_include": [
+   [
+    "999"
+   ],
+   [
+    "1,20,000",
+    "1.2"
+   ]
+  ]
+ },
+ {
+  "q": "Which of your credit cards has the cheapest foreign transaction markup?",
+  "type": "calc",
+  "answerable": true,
+  "gold": [
+   "Industry-leading 1.00% markup",
+   "1.00% + GST"
+  ],
+  "must_include": [
+   [
+    "metal"
+   ],
+   [
+    "1"
+   ]
+  ]
+ },
+ {
+  "q": "For how many days is the credit card interest free?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "45 to 50 days"
+  ],
+  "must_include": [
+   [
+    "45"
+   ],
+   [
+    "50"
+   ]
+  ]
+ },
+ {
+  "q": "How much interest is charged if I pay only the minimum due?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "3.49% per month"
+  ],
+  "must_include": [
+   [
+    "3.49"
+   ]
+  ]
+ },
+ {
+  "q": "What late fee applies if my card balance is ₹7,000?",
+  "type": "calc",
+  "answerable": true,
+  "gold": [
+   "₹5,001 - ₹10,000"
+  ],
+  "must_include": [
+   [
+    "750"
+   ]
+  ]
+ },
+ {
+  "q": "Does the Neo card include airport lounge access?",
+  "type": "negative",
+  "answerable": true,
+  "gold": [
+   "No complimentary airport lounge access"
+  ],
+  "must_include": [
+   [
+    "no",
+    "not"
+   ]
+  ]
+ },
+ {
+  "q": "What is the foreclosure charge if I close my personal loan after 18 months?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "3% of the outstanding principal",
+   "3.0% of outstanding principal"
+  ],
+  "must_include": [
+   [
+    "3%",
+    "3.0"
+   ]
+  ]
+ },
+ {
+  "q": "What CIBIL score do I need to get a personal loan?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "not less than 720"
+  ],
+  "must_include": [
+   [
+    "720"
+   ]
+  ]
+ },
+ {
+  "q": "What is the most I can borrow as a personal loan?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "₹15,00,000"
+  ],
+  "must_include": [
+   [
+    "15,00,000",
+    "15 lakh"
+   ]
+  ]
+ },
+ {
+  "q": "On which day of the month is my EMI taken?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "5th calendar day"
+  ],
+  "must_include": [
+   [
+    "5th",
+    "fifth"
+   ]
+  ]
+ },
+ {
+  "q": "Can I pay back part of my loan in the first three months?",
+  "type": "paraphrase",
+  "answerable": true,
+  "gold": [
+   "minimum of 6 consecutive monthly EMI",
+   "at least 6 consecutive EMIs"
+  ],
+  "must_include": [
+   [
+    "not",
+    "no",
+    "6"
+   ]
+  ]
+ },
+ {
+  "q": "Who can I escalate to if support does not resolve my loan complaint?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "grievance.loans@finbase.com"
+  ],
+  "must_include": [
+   [
+    "grievance"
+   ]
+  ]
+ },
+ {
+  "q": "What hours is video KYC available?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "Monday through Saturday from 9:00 AM to 8:00 PM"
+  ],
+  "must_include": [
+   [
+    "monday"
+   ],
+   [
+    "9"
+   ]
+  ]
+ },
+ {
+  "q": "If I report a fraudulent transaction after 5 days, how much could I lose?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "4 to 7 calendar days"
+  ],
+  "must_include": [
+   [
+    "5,000"
+   ]
+  ]
+ },
+ {
+  "q": "How many different ID documents does FinBase accept for KYC?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "5 Officially Valid Documents"
+  ],
+  "must_include": [
+   [
+    "5",
+    "five"
+   ]
+  ]
+ },
+ {
+  "q": "What number do I call to report card fraud?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "1800-FIN-BASE"
+  ],
+  "must_include": [
+   [
+    "1800"
+   ]
+  ]
+ },
+ {
+  "q": "After how long without transactions does my account turn dormant?",
+  "type": "lookup",
+  "answerable": true,
+  "gold": [
+   "24 continuous months"
+  ],
+  "must_include": [
+   [
+    "24"
+   ]
+  ]
+ },
+ {
+  "q": "And what if I close it after 30 months?",
+  "type": "followup",
+  "answerable": true,
+  "gold": [
+   "1.5% of the outstanding principal",
+   "reduced to 1.5%"
+  ],
+  "must_include": [
+   [
+    "1.5"
+   ]
+  ],
+  "history": [
+   {
+    "role": "user",
+    "content": "What is the foreclosure charge on my personal loan?"
+   },
+   {
+    "role": "assistant",
+    "content": "It is 3% of the outstanding principal plus GST if you close before 24 months."
+   }
+  ]
+ },
+ {
+  "q": "What about the Metal one?",
+  "type": "followup",
+  "answerable": true,
+  "gold": [
+   "₹4,999 + 18% GST",
+   "Waived upon crossing ₹5,00,000"
+  ],
+  "must_include": [
+   [
+    "4,999"
+   ]
+  ],
+  "history": [
+   {
+    "role": "user",
+    "content": "What is the annual fee on the Luxe credit card?"
+   },
+   {
+    "role": "assistant",
+    "content": "The Luxe card has a ₹999 + GST annual fee, waived if you spend over ₹1,20,000 a year."
+   }
+  ]
+ },
+ {
+  "q": "What is FinBase's home loan interest rate?",
+  "type": "unanswerable",
+  "answerable": false,
+  "gold": [],
+  "must_include": []
+ },
+ {
+  "q": "What is the current RBI repo rate?",
+  "type": "unanswerable",
+  "answerable": false,
+  "gold": [],
+  "must_include": []
+ },
+ {
+  "q": "Who is the CEO of FinBase?",
+  "type": "unanswerable",
+  "answerable": false,
+  "gold": [],
+  "must_include": []
+ },
+ {
+  "q": "What are the NEFT cut-off timings?",
+  "type": "unanswerable",
+  "answerable": false,
+  "gold": [],
+  "must_include": []
+ },
+ {
+  "q": "How do I redeem my credit card reward points?",
+  "type": "unanswerable",
+  "answerable": false,
+  "gold": [],
+  "must_include": []
+ },
+ {
+  "q": "How long does a chargeback arbitration take to conclude?",
+  "type": "unanswerable",
+  "answerable": false,
+  "gold": [],
+  "must_include": []
+ },
+ {
+  "q": "Can I take a joint personal loan with my spouse?",
+  "type": "unanswerable",
+  "answerable": false,
+  "gold": [],
+  "must_include": []
+ }
+]

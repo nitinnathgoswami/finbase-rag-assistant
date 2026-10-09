@@ -1,0 +1,1199 @@
+{
+ "config": {
+  "mode": "hybrid_rerank",
+  "top_k": 4,
+  "llm": "groq",
+  "embed": "BAAI/bge-small-en-v1.5",
+  "rerank": "Xenova/ms-marco-MiniLM-L-6-v2"
+ },
+ "summary": {
+  "n_answerable": 41,
+  "n_unanswerable": 7,
+  "retrieval_hit_rate": 0.975609756097561,
+  "answer_correctness": 1.0,
+  "false_abstain_rate": 0.0,
+  "citation_hit_rate": 0.975609756097561,
+  "citation_precision": 0.8861788617886179,
+  "numeric_groundedness": 0.975609756097561,
+  "abstention_accuracy (unanswerable)": 1.0,
+  "llm_judge_groundedness": 0.9512195121951219
+ },
+ "results": [
+  {
+   "q": "Is there a minimum balance I need to keep in the savings account?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "No, the FinBase Digital Savings Account has a zero‑balance structure with no Minimum Average Balance requirement and no penalty for maintaining a zero balance.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Is there a minimum balance I need to keep in the savings account?",
+   "cited": [
+    "sample_4-faq-Q001",
+    "sample_4-s1"
+   ],
+   "retrieved": [
+    "sample_4-faq-Q001",
+    "sample_4-s1",
+    "sample_4-s21",
+    "sample_4-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "How much interest will I earn in a year if I keep 5 lakh in my savings account?",
+   "type": "calc",
+   "answerable": true,
+   "answer": "For a ₹5,00,000 balance, the first ₹1,00,000 earns 3.50% p.a. (₹3,500) and the remaining ₹4,00,000 earns 6.00% p.a. (₹24,000), so total annual interest is ₹27,500.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How much interest will I earn in a year if I keep 5 lakh in my savings account?",
+   "cited": [
+    "sample_4-faq-Q002",
+    "sample_4-s2"
+   ],
+   "retrieved": [
+    "sample_4-faq-Q003",
+    "sample_4-faq-Q002",
+    "sample_4-s2",
+    "sample_1-faq-Q009"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": false,
+   "judge_supported": false
+  },
+  {
+   "q": "How many free withdrawals do I get at non-partner ATMs if I live outside the metros?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "You get 5 free withdrawals per month at non‑partner ATMs in non‑metro locations.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How many free withdrawals do I get at non-partner ATMs if I live outside the metros?",
+   "cited": [
+    "sample_4-s3"
+   ],
+   "retrieved": [
+    "sample_4-faq-Q004",
+    "sample_4-s3",
+    "sample_4-s21",
+    "sample_3-faq-Q009"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What will a physical debit card cost me?",
+   "type": "conflict",
+   "answerable": true,
+   "answer": "A physical debit card costs ₹199 + GST as a one‑time issuance fee, and there is an annual fee of ₹199 + GST charged on each card anniversary.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What will a physical debit card cost me?",
+   "cited": [
+    "sample_4-faq-Q009",
+    "sample_4-s21"
+   ],
+   "retrieved": [
+    "sample_4-faq-Q009",
+    "sample_4-s21",
+    "sample_4-faq-Q008",
+    "sample_3-faq-Q002"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Will I be charged anything for closing my savings account?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "No, FinBase does not charge any fee for closing your savings account.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Will I be charged anything for closing my savings account?",
+   "cited": [
+    "sample_4-faq-Q010"
+   ],
+   "retrieved": [
+    "sample_4-faq-Q010",
+    "sample_5-faq-Q001",
+    "sample_5-faq-Q002",
+    "sample_1-faq-Q002"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What's my daily UPI limit and how many payments can I make in 24 hours?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "Your daily UPI limit is ₹1,00,000 and you can make up to 20 outbound UPI payments in a rolling 24‑hour window.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What's my daily UPI limit and how many payments can I make in 24 hours?",
+   "cited": [
+    "sample_4-faq-Q006",
+    "sample_2-faq-Q004"
+   ],
+   "retrieved": [
+    "sample_4-faq-Q006",
+    "sample_2-faq-Q004",
+    "sample_2-s1",
+    "sample_2-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 0.5,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "When does the bank add interest to my savings account?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "Interest is credited quarterly on March 31, June 30, September 30 and December 31.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "When does the bank add interest to my savings account?",
+   "cited": [
+    "sample_4-faq-Q007",
+    "sample_4-s2"
+   ],
+   "retrieved": [
+    "sample_4-faq-Q007",
+    "sample_4-s2",
+    "sample_4-faq-Q002",
+    "sample_4-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What rate does a senior citizen get on a 1 year FD?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "A senior citizen receives an 8.00% p.a. rate on a 1‑year Fixed Deposit.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What rate does a senior citizen get on a 1 year FD?",
+   "cited": [
+    "sample_1-faq-Q001",
+    "sample_1-s1"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q001",
+    "sample_1-s1",
+    "sample_1-s3",
+    "sample_1-s2"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "If I break my FD within the first week, how much interest do I get?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "If you break the Fixed Deposit within the first 7 days, you receive zero interest as per RBI regulations.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "If I break my FD within the first week, how much interest do I get?",
+   "cited": [
+    "sample_1-s2",
+    "sample_1-faq-Q002"
+   ],
+   "retrieved": [
+    "sample_1-s2",
+    "sample_1-faq-Q002",
+    "sample_4-faq-Q002",
+    "sample_5-faq-Q005"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "How can I stop TDS being cut from my FD interest?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "To avoid TDS on your FD interest, submit Form 15G (if you’re under 60) or Form 15H (if you’re a senior citizen) through the FinBase app, provided your estimated total annual income is below the taxable threshold. Ensure your PAN is linked to your account; otherwise TDS is deducted at 20%.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How can I stop TDS being cut from my FD interest?",
+   "cited": [
+    "sample_1-faq-Q003",
+    "sample_1-s3"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q003",
+    "sample_1-s3",
+    "sample_1-s2",
+    "sample_5-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Does FinBase let me buy and sell Bitcoin?",
+   "type": "negative",
+   "answerable": true,
+   "answer": "No, FinBase does not offer cryptocurrency trading or Bitcoin buying and selling services.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Does FinBase let me buy and sell Bitcoin?",
+   "cited": [
+    "sample_1-faq-Q006",
+    "sample_1-s22"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q006",
+    "sample_1-s22",
+    "sample_1-faq-Q005",
+    "sample_1-faq-Q008"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Can I take a loan against my farmland?",
+   "type": "negative",
+   "answerable": true,
+   "answer": "No, FinBase does NOT offer loans against agricultural farmland.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Can I take a loan against my farmland?",
+   "cited": [
+    "sample_1-faq-Q007",
+    "sample_1-s22"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q007",
+    "sample_1-s22",
+    "sample_5-faq-Q003",
+    "sample_5-s6.2"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Is money in my FinBase fixed deposit insured?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "Yes. Deposits booked with FinBase’s RBI‑scheduled partner banks are covered by the DICGC insurance scheme for up to ₹5,00,000 per depositor.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Is money in my FinBase fixed deposit insured?",
+   "cited": [
+    "sample_1-faq-Q010"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q010",
+    "sample_1-s5",
+    "sample_1-faq-Q009",
+    "sample_1-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What's the smallest SIP I can start?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "The smallest Mutual Fund SIP you can start is ₹100 per month.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What's the smallest SIP I can start?",
+   "cited": [
+    "sample_1-faq-Q004",
+    "sample_1-s4"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q004",
+    "sample_1-s4",
+    "sample_1-faq-Q005",
+    "sample_1-faq-Q009"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "I want to buy digital gold - what is the minimum purchase?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "The minimum amount to purchase digital gold on FinBase is ₹10.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "I want to buy digital gold - what is the minimum purchase?",
+   "cited": [
+    "sample_1-faq-Q005",
+    "sample_1-s5"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q005",
+    "sample_1-s5",
+    "sample_4-faq-Q001",
+    "sample_4-s1"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Can you give me intraday stock tips for today?",
+   "type": "negative",
+   "answerable": true,
+   "answer": "FinBase does not provide intraday stock market tips or any speculative trading advice.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Can you give me intraday stock tips for today?",
+   "cited": [
+    "sample_1-faq-Q008",
+    "sample_1-s22"
+   ],
+   "retrieved": [
+    "sample_1-faq-Q008",
+    "sample_1-s22",
+    "sample_1-s6",
+    "sample_4-s2"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "My UPI payment failed but the money left my account. When will I get it back?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "The amount will be auto‑reversed and credited back to your account within T+2 business days from the transaction date. If the reversal takes longer, FinBase will add ₹100 per calendar day of delay as compensation.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "My UPI payment failed but the money left my account. When will I get it back?",
+   "cited": [
+    "sample_2-faq-Q001",
+    "sample_2-s2"
+   ],
+   "retrieved": [
+    "sample_2-faq-Q001",
+    "sample_2-s2",
+    "sample_2-faq-Q008",
+    "sample_2-faq-Q002"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What do I get if the bank is late returning my failed transaction money?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "If the reversal of a failed transaction takes longer than the T+2 business‑day limit, FinBase will credit you ₹100 for each calendar day of delay directly into your account, without you needing to file a claim.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What do I get if the bank is late returning my failed transaction money?",
+   "cited": [
+    "sample_2-faq-Q002",
+    "sample_2-s2"
+   ],
+   "retrieved": [
+    "sample_2-faq-Q002",
+    "sample_2-s2",
+    "sample_2-faq-Q001",
+    "sample_2-s21"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "How much can I send by UPI in the 24 hours after resetting my PIN?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "During the first 24 hours after you reset your UPI PIN, outward UPI payments are limited to a cumulative ₹5,000.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How much can I send by UPI in the 24 hours after resetting my PIN?",
+   "cited": [
+    "sample_2-faq-Q003",
+    "sample_2-s1"
+   ],
+   "retrieved": [
+    "sample_2-faq-Q003",
+    "sample_2-s1",
+    "sample_2-faq-Q004",
+    "sample_4-faq-Q006"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "How long do I have to report an unauthorised debit in the app?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "You can report an unauthorised debit in the FinBase app within 3 calendar days of the transaction.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How long do I have to report an unauthorised debit in the app?",
+   "cited": [
+    "sample_2-faq-Q005",
+    "sample_2-s3"
+   ],
+   "retrieved": [
+    "sample_2-faq-Q005",
+    "sample_2-s3",
+    "sample_6-faq-Q004",
+    "sample_2-faq-Q001"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "A merchant debit failed on an online purchase. When should the refund arrive and when does compensation start?",
+   "type": "conflict",
+   "answerable": true,
+   "answer": "The refund for a failed online merchant debit will be credited back within T+2 business days (FinBase’s standard SLA). Compensation of ₹100 per calendar day begins only after the regulatory deadline of T+5 days has passed, i.e., for each day beyond T+5.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "A merchant debit failed on an online purchase. When should the refund arrive and when does compensation start?",
+   "cited": [
+    "sample_2-s21",
+    "sample_2-s2"
+   ],
+   "retrieved": [
+    "sample_2-s21",
+    "sample_2-s2",
+    "sample_2-faq-Q001",
+    "sample_2-faq-Q002"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 0.5,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What does the UPI error U69 mean?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "U69 indicates an NPCI timeout – a temporary network timeout between the switch and the beneficiary bank. Payments may be auto‑reversed within T+2 days if the amount was debited.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What does the UPI error U69 mean?",
+   "cited": [
+    "sample_2-faq-Q008",
+    "sample_2-s4"
+   ],
+   "retrieved": [
+    "sample_2-faq-Q008",
+    "sample_2-s4",
+    "sample_2-s21",
+    "sample_2-faq-Q001"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "How much is the Luxe card annual fee and how do I get it waived?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "The FinBase Luxe card annual fee is ₹999 + 18% GST. It is fully waived if your total annual spend in the previous calendar year exceeds ₹1,20,000.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How much is the Luxe card annual fee and how do I get it waived?",
+   "cited": [
+    "sample_3-faq-Q002",
+    "sample_3-s21"
+   ],
+   "retrieved": [
+    "sample_3-faq-Q002",
+    "sample_3-s21",
+    "sample_3-s1-p2",
+    "sample_3-faq-Q001"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 0.5,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Which of your credit cards has the cheapest foreign transaction markup?",
+   "type": "calc",
+   "answerable": true,
+   "answer": "The FinBase Metal Credit Card has the lowest foreign‑currency markup at 1.00% on international transactions.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Which of your credit cards has the cheapest foreign transaction markup?",
+   "cited": [
+    "sample_3-faq-Q006",
+    "sample_3-s1-p2"
+   ],
+   "retrieved": [
+    "sample_3-faq-Q001",
+    "sample_3-faq-Q006",
+    "sample_3-s1",
+    "sample_3-s1-p2"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 0.5,
+   "numbers_grounded": true,
+   "judge_supported": false
+  },
+  {
+   "q": "For how many days is the credit card interest free?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "The interest‑free grace period is between 45 and 50 days, depending on the transaction date.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "For how many days is the credit card interest free?",
+   "cited": [
+    "sample_3-s3"
+   ],
+   "retrieved": [
+    "sample_3-s3",
+    "sample_3-s2",
+    "sample_3-faq-Q005",
+    "sample_4-s21"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "How much interest is charged if I pay only the minimum due?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "If you pay only the Minimum Amount Due, finance charges are applied to the remaining unpaid balance at 3.49% per month (effective 41.88% per annum).",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How much interest is charged if I pay only the minimum due?",
+   "cited": [
+    "sample_3-s3",
+    "sample_3-faq-Q005"
+   ],
+   "retrieved": [
+    "sample_3-s3",
+    "sample_1-faq-Q002",
+    "sample_3-faq-Q005",
+    "sample_3-faq-Q008"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What late fee applies if my card balance is ₹7,000?",
+   "type": "calc",
+   "answerable": true,
+   "answer": "The late‑payment fee for a balance of ₹7,000 is ₹750 + GST (applies to Neo, Luxe and Metal cards).",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What late fee applies if my card balance is ₹7,000?",
+   "cited": [
+    "sample_3-s21"
+   ],
+   "retrieved": [
+    "sample_3-s21",
+    "sample_3-faq-Q002",
+    "sample_4-faq-Q002",
+    "sample_4-s21"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Does the Neo card include airport lounge access?",
+   "type": "negative",
+   "answerable": true,
+   "answer": "The FinBase Neo Credit Card does not include any complimentary airport lounge access.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Does the Neo card include airport lounge access?",
+   "cited": [
+    "sample_3-s1"
+   ],
+   "retrieved": [
+    "sample_3-s1",
+    "sample_3-faq-Q004",
+    "sample_3-s1-p2",
+    "sample_3-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What is the foreclosure charge if I close my personal loan after 18 months?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "The foreclosure charge is 3% of the outstanding principal plus 18% GST.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What is the foreclosure charge if I close my personal loan after 18 months?",
+   "cited": [
+    "sample_5-faq-Q001",
+    "sample_5-s6.2"
+   ],
+   "retrieved": [
+    "sample_5-faq-Q001",
+    "sample_5-faq-Q002",
+    "sample_5-s6.2",
+    "sample_5-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What CIBIL score do I need to get a personal loan?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "FinBase requires a minimum CIBIL (or Experian) score of 720 for personal loans. Scores of 720‑749 fall in Tier 3, 750‑779 in Tier 2, and 780+ in Tier 1 for interest‑rate pricing.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What CIBIL score do I need to get a personal loan?",
+   "cited": [
+    "sample_5-faq-Q007",
+    "sample_5-s2",
+    "sample_5-s4"
+   ],
+   "retrieved": [
+    "sample_5-faq-Q007",
+    "sample_5-s4",
+    "sample_5-faq-Q006",
+    "sample_5-s2"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 0.3333333333333333,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What is the most I can borrow as a personal loan?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "The maximum personal loan you can obtain from FinBase is ₹15,00,000 (15 Lakhs).",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What is the most I can borrow as a personal loan?",
+   "cited": [
+    "sample_5-faq-Q008",
+    "sample_5-s3"
+   ],
+   "retrieved": [
+    "sample_5-faq-Q008",
+    "sample_5-faq-Q006",
+    "sample_5-faq-Q004",
+    "sample_5-s3"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "On which day of the month is my EMI taken?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "Your EMI is debited on the 5th calendar day of each month (or the preceding working day if the 5th is a bank holiday).",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "On which day of the month is my EMI taken?",
+   "cited": [
+    "sample_5-s5"
+   ],
+   "retrieved": [
+    "sample_5-s5",
+    "sample_5-faq-Q005",
+    "sample_5-s6.1",
+    "sample_3-s3"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Can I pay back part of my loan in the first three months?",
+   "type": "paraphrase",
+   "answerable": true,
+   "answer": "No. Under Section 4.1 you may part‑prepay up to 25% of the outstanding principal once per financial year with zero penalty only after you have paid at least 6 consecutive EMIs, so it is not allowed in the first three months.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Can I pay back part of my loan in the first three months?",
+   "cited": [
+    "sample_5-faq-Q004"
+   ],
+   "retrieved": [
+    "sample_5-faq-Q003",
+    "sample_5-faq-Q001",
+    "sample_5-faq-Q002",
+    "sample_5-faq-Q004"
+   ],
+   "retrieval_hit": false,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": false,
+   "citation_precision": 0.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "Who can I escalate to if support does not resolve my loan complaint?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "If the support executive doesn’t resolve your loan complaint, you can escalate it to the Grievance Officer by emailing grievance.loans@finbase.com. If it remains unresolved beyond 30 days, you may further appeal to the Principal Nodal Officer and the RBI Ombudsman via the RBI CMS portal (cms.rbi.org.in).",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "Who can I escalate to if support does not resolve my loan complaint?",
+   "cited": [
+    "sample_5-s22"
+   ],
+   "retrieved": [
+    "sample_5-s22",
+    "sample_5-faq-Q003",
+    "sample_1-s22",
+    "sample_5-faq-Q002"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What hours is video KYC available?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "Video KYC agents are available Monday through Saturday from 9:00 AM to 8:00 PM IST, and are closed on national holidays.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What hours is video KYC available?",
+   "cited": [
+    "sample_6-faq-Q002",
+    "sample_6-s3"
+   ],
+   "retrieved": [
+    "sample_6-faq-Q002",
+    "sample_6-s3",
+    "sample_6-s1",
+    "sample_6-faq-Q008"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "If I report a fraudulent transaction after 5 days, how much could I lose?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "If you report the fraud after 5 days (i.e., between 4‑7 days), your liability is limited to a maximum of ₹5,000 or the transaction amount, whichever is lower.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "If I report a fraudulent transaction after 5 days, how much could I lose?",
+   "cited": [
+    "sample_6-s5"
+   ],
+   "retrieved": [
+    "sample_6-faq-Q004",
+    "sample_6-s5",
+    "sample_2-faq-Q002",
+    "sample_2-faq-Q005"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "How many different ID documents does FinBase accept for KYC?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "FinBase accepts five different ID documents for KYC.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "How many different ID documents does FinBase accept for KYC?",
+   "cited": [
+    "sample_6-faq-Q006",
+    "sample_6-s2"
+   ],
+   "retrieved": [
+    "sample_6-faq-Q006",
+    "sample_6-s2",
+    "sample_6-s1",
+    "sample_6-faq-Q001"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 0.5,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What number do I call to report card fraud?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "Call the 24/7 toll‑free fraud helpline at 1800‑FIN‑BASE (1800‑346‑2273).",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What number do I call to report card fraud?",
+   "cited": [
+    "sample_6-faq-Q005",
+    "sample_6-s6"
+   ],
+   "retrieved": [
+    "sample_6-faq-Q005",
+    "sample_6-s6",
+    "sample_6-faq-Q004",
+    "sample_3-s4"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "After how long without transactions does my account turn dormant?",
+   "type": "lookup",
+   "answerable": true,
+   "answer": "Your account becomes dormant after 24 continuous months with no customer‑initiated transactions.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "After how long without transactions does my account turn dormant?",
+   "cited": [
+    "sample_6-faq-Q003",
+    "sample_6-s4"
+   ],
+   "retrieved": [
+    "sample_6-faq-Q003",
+    "sample_6-s4",
+    "sample_6-faq-Q009",
+    "sample_2-s2"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "And what if I close it after 30 months?",
+   "type": "followup",
+   "answerable": true,
+   "answer": "The foreclosure charge is 1.5% of the outstanding principal plus 18% GST.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What is the foreclosure charge on my personal loan if I close it after 30 months?",
+   "cited": [
+    "sample_5-faq-Q002",
+    "sample_5-s6.2"
+   ],
+   "retrieved": [
+    "sample_5-faq-Q002",
+    "sample_5-faq-Q001",
+    "sample_5-s6.2",
+    "sample_5-faq-Q003"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 1.0,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What about the Metal one?",
+   "type": "followup",
+   "answerable": true,
+   "answer": "The FinBase Metal credit card has an annual fee of ₹4,999 + 18% GST, which is waived once you spend ₹5,00,000 in a calendar year.",
+   "model_answerable": true,
+   "abstained_by": null,
+   "standalone": "What is the annual fee on the Metal credit card?",
+   "cited": [
+    "sample_3-s1-p2",
+    "sample_3-s21"
+   ],
+   "retrieved": [
+    "sample_3-s1-p2",
+    "sample_3-s21",
+    "sample_3-faq-Q002",
+    "sample_3-faq-Q006"
+   ],
+   "retrieval_hit": true,
+   "correct": true,
+   "false_abstain": false,
+   "citation_hit": true,
+   "citation_precision": 0.5,
+   "numbers_grounded": true,
+   "judge_supported": true
+  },
+  {
+   "q": "What is FinBase's home loan interest rate?",
+   "type": "unanswerable",
+   "answerable": false,
+   "answer": "The provided information does not include FinBase's home loan interest rate.",
+   "model_answerable": false,
+   "abstained_by": "llm",
+   "standalone": "What is FinBase's home loan interest rate?",
+   "cited": [],
+   "retrieved": [
+    "sample_5-s4",
+    "sample_4-faq-Q002",
+    "sample_4-faq-Q003",
+    "sample_1-faq-Q001"
+   ],
+   "correct_abstain": true
+  },
+  {
+   "q": "What is the current RBI repo rate?",
+   "type": "unanswerable",
+   "answerable": false,
+   "answer": "I couldn't find information about that in the FinBase knowledge base, so I don't want to guess. Could you rephrase, or ask about FinBase's savings, fixed deposits, payments/UPI, credit cards, personal loans or KYC/security?",
+   "model_answerable": false,
+   "abstained_by": "retrieval_guard",
+   "standalone": "What is the current RBI repo rate?",
+   "cited": [],
+   "retrieved": [
+    "sample_1-faq-Q001",
+    "sample_3-faq-Q005",
+    "sample_4-faq-Q003",
+    "sample_5-s4"
+   ],
+   "correct_abstain": true
+  },
+  {
+   "q": "Who is the CEO of FinBase?",
+   "type": "unanswerable",
+   "answerable": false,
+   "answer": "The provided information does not include the name of FinBase's CEO.",
+   "model_answerable": false,
+   "abstained_by": "llm",
+   "standalone": "Who is the CEO of FinBase?",
+   "cited": [],
+   "retrieved": [
+    "sample_5-s1",
+    "sample_5-s22",
+    "sample_1-faq-Q006",
+    "sample_6-s5"
+   ],
+   "correct_abstain": true
+  },
+  {
+   "q": "What are the NEFT cut-off timings?",
+   "type": "unanswerable",
+   "answerable": false,
+   "answer": "I couldn't find information about that in the FinBase knowledge base, so I don't want to guess. Could you rephrase, or ask about FinBase's savings, fixed deposits, payments/UPI, credit cards, personal loans or KYC/security?",
+   "model_answerable": false,
+   "abstained_by": "retrieval_guard",
+   "standalone": "What are the NEFT cut-off timings?",
+   "cited": [],
+   "retrieved": [
+    "sample_4-faq-Q005",
+    "sample_4-s3",
+    "sample_4-s21",
+    "sample_2-s4"
+   ],
+   "correct_abstain": true
+  },
+  {
+   "q": "How do I redeem my credit card reward points?",
+   "type": "unanswerable",
+   "answerable": false,
+   "answer": "I couldn't find information about that in the FinBase knowledge base, so I don't want to guess. Could you rephrase, or ask about FinBase's savings, fixed deposits, payments/UPI, credit cards, personal loans or KYC/security?",
+   "model_answerable": false,
+   "abstained_by": "retrieval_guard",
+   "standalone": "How do I redeem my credit card reward points?",
+   "cited": [],
+   "retrieved": [
+    "sample_3-s1-p2",
+    "sample_3-s1",
+    "sample_3-faq-Q002",
+    "sample_3-s3"
+   ],
+   "correct_abstain": true
+  },
+  {
+   "q": "How long does a chargeback arbitration take to conclude?",
+   "type": "unanswerable",
+   "answerable": false,
+   "answer": "The provided information does not specify how long a chargeback arbitration takes to conclude.",
+   "model_answerable": false,
+   "abstained_by": "llm",
+   "standalone": "How long does a chargeback arbitration take to conclude?",
+   "cited": [],
+   "retrieved": [
+    "sample_2-s3",
+    "sample_2-faq-Q006",
+    "sample_5-s22",
+    "sample_2-faq-Q005"
+   ],
+   "correct_abstain": true
+  },
+  {
+   "q": "Can I take a joint personal loan with my spouse?",
+   "type": "unanswerable",
+   "answerable": false,
+   "answer": "I couldn't find information about that in the FinBase knowledge base, so I don't want to guess. Could you rephrase, or ask about FinBase's savings, fixed deposits, payments/UPI, credit cards, personal loans or KYC/security?",
+   "model_answerable": false,
+   "abstained_by": "retrieval_guard",
+   "standalone": "Can I take a joint personal loan with my spouse?",
+   "cited": [],
+   "retrieved": [
+    "sample_5-faq-Q003",
+    "sample_5-faq-Q002",
+    "sample_5-faq-Q006",
+    "sample_5-faq-Q004"
+   ],
+   "correct_abstain": true
+  }
+ ]
+}
